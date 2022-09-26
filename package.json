@@ -1,0 +1,19 @@
+{
+  "name": "@timcash10/bst.js",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/bst.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timcash/bst.js"
+  },
+  "homepage": "https://github.com/timcash/bst.js",
+  "scripts": {
+    "test": "brittle --coverage src/bst.test.js",
+    "watch": "nodemon src/bst.test.js",
+    "watch:i": "nodemon --inspect src/bst.test.js"
+  },
+  "devDependencies": {
+    "brittle": "^3.1.1"
+  }
+}
