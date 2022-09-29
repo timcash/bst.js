@@ -1,5 +1,6 @@
 {
   "name": "@timcash10/bst.js",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "main": "src/bst.js",
