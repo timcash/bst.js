@@ -1,11 +1,14 @@
 ![](public/logo.png)
 # bst.js
 Supports numbers
+```sh
+npm i @timcash10/bst.js
+```
 ## Includes standard methods of a BST
 1. `insert`
 1. `find`
 1. `traverseInOrder`
-1. `sccessor`
+1. `successor`
 1. `remove`
 
 ## Additional methods
@@ -13,8 +16,10 @@ Supports numbers
 1. BST can be constructed from an array of numbers
 
 # Setup
-1. `npm install`
-1. `npm test`
+```sh
+npm install 
+npm test
+```
 
 # API
 ```javascript
@@ -52,7 +57,7 @@ t.alike(deepest, {keys:[33, 92], depth:2}, "deepest node multiple");
 
 
 # Coverage & Benchmark
-> Coverage is repported at the end of each test run
+> Coverage is reported at the end of each test run
 
 To turn off he benchmark use `skip` on the test
 ![](public/benchcov.png)
