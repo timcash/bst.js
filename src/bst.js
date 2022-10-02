@@ -200,7 +200,7 @@ function min(node) {
  * @example
  * const tree = new BinarySearchTree([0,-1,-10,4,5]);
  * const node = find(tree, 4);
- * const next = nextLargest(node);
+ * const next = successor(node);
  * console.log(next.key); // 5
  */
 function successor(node) {
@@ -215,7 +215,7 @@ function successor(node) {
 }
 
 /**
- * this function is for shifting pointers
+ * A function is for shifting pointers
  * keeping the name and parameters
  * as literature for easy reference
  * @function
