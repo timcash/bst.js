@@ -272,6 +272,12 @@ test("Deepest", (t) => {
   t.alike(deepest, {keys:[], depth:0}, "deepest node");
 });
 
+skip('Print', async (t) => {
+  const bst = new BinarySearchTree([12, 11, 90, 82, 7, 9, -1, 44, 99]);
+  Operators.print(bst);
+  t.pass()
+})
+
 test("Randomized", (t) => {
   for (let i = 0; i < 10; i++) {
     const init = randomIntArray(10, -100, 100);

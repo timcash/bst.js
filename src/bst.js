@@ -267,6 +267,20 @@ function remove(T, node) {
   node.destroy();
 }
 
+/**
+ * A function for printing the tree
+ * @function
+*/
+function print(T) {
+  const traverse = (node, depth = 0) => {
+    if (node.exists === false) return;
+    traverse(node.right, depth + 1);
+    console.log("-".repeat(depth * 3), "|",node.key);
+    traverse(node.left, depth + 1);
+  };
+  traverse(T.root);
+}
+
 const Operators = {
   min,
   find,
@@ -275,6 +289,7 @@ const Operators = {
   successor,
   remove,
   deepest,
+  print
 };
 
 export { BinarySearchTree, Operators, Node };
